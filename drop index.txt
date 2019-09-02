@@ -1,0 +1,7 @@
+CREATE NONCLUSTERED INDEX [ix_powerbidata_status] ON [dbo].[powerbidata]
+(
+	[Status] ASC,
+	[Carrier_Cd] ASC,
+	[Carrier_Name] ASC
+
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = OFF, ALLOW_PAGE_LOCKS = OFF);
